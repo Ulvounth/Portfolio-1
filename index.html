@@ -8,55 +8,61 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <h1 class="logo">Andreas</h1>
+            <ul class="nav-links-container">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#projects">My Projects</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <h1>Andreas</h1>
     </header>
     <main>
         <section id="home" class="home-section">
             <div class="left-div">
-                <h2>Hey, I am Andreas</h2>
+                <h2>Hi, I am Andreas</h2>
                 <p>Welcome to my portfolio website. I'm a Front-end Development enthusiast.</p>
+                <a href="#contact" class="button">Contact me</a>
             </div>
             <div class="right-div">
                 <img src="Images/Andreas.jpg" alt="Andreas Ulvund">
             </div>
         </section>
-        
-
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="project-card">
-                <img src="Images/Community Science Museum.png" alt="Project 1">
-                <h3>Project 1</h3>
-                <a href="https://github.com/yourusername/project1" target="_blank">GitHub Repo</a>
-            </div>
-            <div class="project-card">
-                <img src="Images/Rainydays.png" alt="Project 2">
-                <h3>Project 2</h3>
-                <a href="https://github.com/yourusername/project2" target="_blank">GitHub Repo</a>
-            </div>
-            <div class="project-card">
-                <img src="Images/Blog.png" alt="Project 3">
-                <h3>Project 3</h3>
-                <a href="https://github.com/yourusername/project3" target="_blank">GitHub Repo</a>
-            </div>
-        </section>
-
         <section id="about">
-            <h2>About Me</h2>
-            <p>Write something about yourself here.</p>
+            <h2 class="heading">About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolorum modi ex impedit odio in officiis. Aliquam, qui eaque molestiae nisi numquam quos dolorem maiores exercitationem voluptas temporibus velit reprehenderit!</p>
         </section>
-
+        <section id="projects">
+            <h2 class="heading">My Projects</h2>
+            <div class="project-container">
+                <div class="project-card">
+                    <img src="Images/Community Science Museum.png" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <a href="https://github.com/yourusername/project1" target="_blank">GitHub Repo</a>
+                </div>
+                <div class="project-card">
+                    <img src="Images/Rainydays.png" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <a href="https://github.com/yourusername/project2" target="_blank">GitHub Repo</a>
+                </div>
+                <div class="project-card">
+                    <img src="Images/Blog.png" alt="Project 3">
+                    <h3>Project 3</h3>
+                    <a href="https://github.com/yourusername/project3" target="_blank">GitHub Repo</a>
+                </div>
+            </div>
+        </section>
         <section id="contact">
-            <h2>Contact</h2>
+            <h2 class="heading">Contact</h2>
             <p>Contact information goes here.</p>
+            <div class="form">
+                <input type="text" placeholder="Name" aria-autocomplete="list">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Subject">
+                <textarea placeholder="Message"></textarea>
+                <button class="contact-button">Send message</button>
+            </div>
         </section>
     </main>
 
