@@ -5,18 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Andreas Ulvund - Portfolio</title>
+    <script src="https://kit.fontawesome.com/0ea37d4b08.js" crossorigin="anonymous"></script>
+    <script src="Javascript/mobilemenu.js" type="module" defer></script>
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <div class="header">
             <h1 class="logo">Andreas</h1>
-            <ul class="nav-links-container">
+        <nav>
+            <ul class="navbar">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#projects">My Projects</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
         </nav>
+        <div class="mobile">
+            <i id="bar" class="fa-solid fa-bars"></i>
+          </div>
+        </div>
     </header>
     <main>
         <section id="home" class="home-section">
@@ -31,24 +39,35 @@
         </section>
         <section id="about">
             <h2 class="heading">About Me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolorum modi ex impedit odio in officiis. Aliquam, qui eaque molestiae nisi numquam quos dolorem maiores exercitationem voluptas temporibus velit reprehenderit!</p>
+            <div class="about-container">
+                <p class="about-text"><strong>Hey there</strong>, I'm Andreas! Originally from Sunndalsøra, Norway, I'm currently living in sunny Spain while I dive into the world of Front-end Development.</p>
+            <p class="about-text">Before this, I worked at an Aluminum Factory, which was a good gig, but I felt a strong itch to try something different. That's when I decided to switch lanes and explore web development.</p>
+            <p class="about-text">Right now, I'm a student at the Noroff School of Technology and Digital Media, where I'm learning the ropes of Front-end Development. It's a journey I'm excited about and fully committed to.</p>
+            <p class="about-text">My time in the factory taught me the importance of hard work and determination. While I have great memories from there, I'm now pursuing a career that allows me to tap into my creative side.</p>
+            <p class="about-text">Front-end Development has become my true passion. I love how it constantly changes, and I'm always learning something new. It's a field where I can combine my creativity with my technical skills.</p>
+            <p class="about-text">Outside of coding, I'm all about exploring. Spain's a fantastic place for that, with its mix of nature and culture. I'm all about finding that balance between work and play. My journey is just beginning, and I'm looking forward to growing as a Front-end Developer. Thanks for taking a peek into my world, and I can't wait to connect with you as we navigate this exciting tech world together!</p>
+            </div>
         </section>
         <section id="projects">
             <h2 class="heading">My Projects</h2>
             <div class="project-container">
                 <div class="project-card">
-                    <img src="Images/Community Science Museum.png" alt="Project 1">
-                    <h3>Project 1</h3>
-                    <a href="https://github.com/yourusername/project1" target="_blank">GitHub Repo</a>
+                    <img src="Images/Community Science Museum.png" alt="Community Science Museum">
+                    <h3>Community Science Museum</h3>
+                    <p>This was my semester project in which we were tasked with creating a website for a Community Science Museum. The intended audience comprised children between the ages of 7 and 15, as well as families with younger children and schools. The website was required to consist of a minimum of 4-6 pages, with the code written in semantically structured and neatly indented HTML. Additionally, we were expected to adhere to the DRY (Don't Repeat Yourself) principles for the CSS (Cascading Style Sheets). Furthermore, the site needed to be responsive to various screen sizes and devices.</p>
+                    <i class="fa-brands fa-github"></i>
+                    <a href="https://github.com/Ulvounth/Semester-project" target="_blank">GitHub Repo</a>
                 </div>
                 <div class="project-card">
-                    <img src="Images/Rainydays.png" alt="Project 2">
-                    <h3>Project 2</h3>
+                    <img src="Images/Rainydays.png" alt="Rainydays">
+                    <h3>Rainydays</h3>
+                    <p>This was my Cross-Course Assignment, during which we were required to create a website based on a chosen brief. In my case, the chosen brief was "Rainydays." The intended audience for this website consisted of men and women aged between 30 and 50, whose interests include outdoor activities such as hiking, exploration, skiing, camping, and canoeing.</p>
                     <a href="https://github.com/yourusername/project2" target="_blank">GitHub Repo</a>
                 </div>
                 <div class="project-card">
-                    <img src="Images/Blog.png" alt="Project 3">
-                    <h3>Project 3</h3>
+                    <img src="Images/Blog.png" alt="Semester Project">
+                    <h3>Project Exam</h3>
+                    <p>This was my Project Exam, where we were tasked with creating a blog website from scratch. During this project, I independently selected the theme and content, and I was responsible for every aspect of its development, including wireframing/prototyping, design, and HTML. In addition to utilizing CSS and HTML, I employed JavaScript to retrieve data from a WordPress page containing all the blog content. As part of this project, we were required to demonstrate our proficiency in using REST APIs and other JavaScript features, such as implementing onclick modals for images and form validation for the contact form.</p>
                     <a href="https://github.com/yourusername/project3" target="_blank">GitHub Repo</a>
                 </div>
             </div>

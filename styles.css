@@ -6,7 +6,7 @@
 
 h1, h2, h3, p {
     margin: 0;
-    padding: 0;
+    padding: 10px 0;
     color: #fff;
 }
 
@@ -15,24 +15,27 @@ body {
     background-color: #333;
 }
 
-header {
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    color: #fff;
+    padding: 0px 10vw;
+  }
 
 .navbar {
-    position: fixed;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 0 10vw;
-    z-index: 3;
-    height: 90px;
-    background-color: #333;
+    gap: 3rem;
+}
+
+.navbar li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+#close {
+    display: none;
 }
 
 .logo {
@@ -51,11 +54,18 @@ nav a {
     font-size: 1.7rem;
 }
 
+/* Menu bar */
+.mobile {
+    display: none;
+    align-items: center;
+}
+
+/* Home section */
 .home-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100vh; /* Makes the section cover the full viewport height */
+    height: 100vh;
     color: white;
     padding: 0 10vw;
 }
@@ -99,15 +109,17 @@ nav a {
 .right-div img {
     max-width: 100%;
     max-height: 100%;
-    border-radius: 50%; /* Rounded image, adjust as needed */
+    border-radius: 50%;
 }
 
 .heading {
     text-align: center;
     font-size: 3rem;
-    margin-bottom: 100px;
+    margin: 80px 0;
+    border-bottom: 1px solid #fff;
 }
 
+/* Projects section */
 #projects {
     padding: 0 10vw;
 }
@@ -115,8 +127,7 @@ nav a {
 .project-container {
     display: grid;
     margin: 0 auto;
-    grid-template-columns: repeat(1, 1fr);
-    padding: 2rem;
+    grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
     text-align: center;
 }
@@ -124,24 +135,45 @@ nav a {
 .project-card {
     display: grid;
     border-radius: 5px;
-    min-width: 90%;
     margin: 0 auto;
-    padding: 2rem 1em;
+    padding: 1rem 1em;
     justify-content: center;
-    background: #5f4f4f;
+    background: #1e1b1b1f;
 }
 
 .project-card img {
-    width: 500px;
-    height: auto;
+    max-width: 350px;
     border-radius: 10px;
     border: 2px solid #fff;
+    margin: auto;
 }
 
+.project-card p {
+    max-width: 500px;
+}
+
+.project-card i {
+    color: #248157;
+    font-size: 2rem;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: rgb(226 47 227 / 90%);
+    font-size: 1.7rem;
+}
+
+/* About section */
 #about {
-    padding: 0 10vw;
+    padding: 0px 10vw;
 }
 
+.about-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Contact section */
 #contact {
     margin: 100px 0;
     padding: 0 10vw;
@@ -178,10 +210,56 @@ textarea {
     margin-top: 10px;
 }
 
+/* Footer section */
 footer {
     color: white;
     text-align: center;
     padding: 10px;
 }
 
-/* Add more CSS styles to customize your portfolio further */
+/* @Media section */
+@media (max-width: 1570px) {
+    .project-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: fixed;
+        top: 0px;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        background: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+        padding: 80px 0 0 10px;
+    }
+
+    .navbar.active {
+        right: 0;
+    }
+
+    nav a {
+        color: rgb(0, 0, 0);
+    }
+
+    .mobile {
+        display: flex;
+        gap: 0.5em;
+        font-size: 2.4em;
+    }
+
+    #close {
+        display: initial;
+        font-size: 36px;
+        position: absolute;
+        top: 20px;
+        left: 20px;;
+      }
+      #bar {
+        display: initial;
+      }
+}
