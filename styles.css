@@ -174,10 +174,7 @@ nav a {
 }
 
 .about-image img {
-    width: 90%;
-    height: 500px;
     display: block;
-    object-fit: cover;
     margin: 10px auto;
     border-radius: 10px;
 }
@@ -204,10 +201,9 @@ nav a {
 }
 
 .about-container {
-    max-width: 1200px;
     margin: auto;
     display: flex;
-    gap: 100px;
+    gap: 50px;
 }
 
 /* Contact section */
