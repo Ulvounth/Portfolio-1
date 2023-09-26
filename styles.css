@@ -1,5 +1,7 @@
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -21,7 +23,7 @@ body {
     justify-content: space-between;
     margin: auto;
     color: #fff;
-    padding: 0px 10vw;
+    padding: 20px 10vw;
   }
 
 .navbar {
@@ -50,6 +52,10 @@ nav a {
     font-size: 1.7rem;
 }
 
+section {
+    padding: 0 10vw;
+}
+
 /* Menu bar */
 .mobile {
     display: none;
@@ -67,7 +73,6 @@ nav a {
     align-items: center;
     height: 100vh;
     color: white;
-    padding: 0 10vw;
 }
 
 .left-div {
@@ -120,9 +125,6 @@ nav a {
 }
 
 /* Projects section */
-#projects {
-    padding: 0 10vw;
-}
 
 .project-container {
     display: grid;
@@ -165,9 +167,6 @@ nav a {
 }
 
 /* About section */
-#about {
-    padding: 0px 10vw;
-}
 
 .about-image {
     width: 40%;
@@ -203,13 +202,12 @@ nav a {
 .about-container {
     margin: auto;
     display: flex;
-    gap: 50px;
+    gap: 25px;
 }
 
 /* Contact section */
 #contact {
     margin: 100px 0;
-    padding: 0 10vw;
 }
 
 .form {
@@ -245,7 +243,6 @@ textarea {
 
 /* Footer section */
 footer {
-    color: white;
     text-align: center;
     padding: 10px;
 }
@@ -258,8 +255,6 @@ footer {
     .navbar {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
         position: fixed;
         top: 0px;
         right: -300px;
@@ -308,5 +303,13 @@ footer {
 
       .about-image {
         width: 470px;
+      }
+
+      .project-card img {
+        max-width: 500px;
+      }
+
+      .project-card p {
+        max-width: 900px;
       }
 }
