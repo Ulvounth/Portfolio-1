@@ -157,6 +157,11 @@ section {
     background: #1e1b1b1f;
 }
 
+.project-card:hover {
+    background: #201e1e9a;
+    transition: 1.2s;
+}
+
 .project-card img {
     max-width: 350px;
     border-radius: 10px;
@@ -185,6 +190,10 @@ section {
     display: flex;
     margin: auto;
     gap: 20px;
+}
+
+.project-card i:hover {
+    color: #3db17d;
 }
 
 .project-card a:hover {
@@ -222,6 +231,11 @@ section {
 .social-links i {
     color: #fff;
     font-size: 2.2rem;
+}
+
+.social-links i:hover {
+    transition: 0.5s;
+    color: rgb(226 47 227 / 90%);
 }
 
 .about-container {
