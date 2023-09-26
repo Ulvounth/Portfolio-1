@@ -319,6 +319,11 @@ footer {
         padding: 0 5vw;
     }
 
+    .heading {
+        font-size: 2.3rem;
+        margin: 40px 0;
+    }
+
     .home-section {
         flex-direction: column-reverse;
     }
@@ -326,7 +331,31 @@ footer {
         text-align: center;
     }
 
+    .left-div h2 {
+        font-size: 2.2rem;
+    }
+
+    .left-div p {
+        font-size: 1.2rem;
+    }
+
     .about-text p {
         font-size: 1rem;
+    }
+
+    .about-image img {
+        max-width: 350px;
+    }
+
+    .right-div img {
+        width: 75%;
+    }
+
+    .project-card img {
+        max-width: 350px;
+    }
+
+    .project-card p {
+        font-size: 0.9rem;
     }
 }
