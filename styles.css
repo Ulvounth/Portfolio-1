@@ -17,6 +17,14 @@ body {
     background-color: #333;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #333333;
+    width: 100%;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -73,6 +81,7 @@ section {
     align-items: center;
     height: 100vh;
     color: white;
+    margin-top: 70px;
 }
 
 .left-div {
@@ -337,6 +346,10 @@ footer {
 
     .left-div p {
         font-size: 1.2rem;
+    }
+
+    .about-container {
+        gap: 10px;
     }
 
     .about-text p {
