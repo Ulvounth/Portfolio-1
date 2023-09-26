@@ -313,3 +313,20 @@ footer {
         max-width: 900px;
       }
 }
+
+@media (max-width: 800px) {
+    section {
+        padding: 0 5vw;
+    }
+
+    .home-section {
+        flex-direction: column-reverse;
+    }
+    .left-div {
+        text-align: center;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+}
