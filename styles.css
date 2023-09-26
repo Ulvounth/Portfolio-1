@@ -343,8 +343,12 @@ footer {
         font-size: 1rem;
     }
 
+    .about-image {
+        width: 100%;
+    }
+
     .about-image img {
-        max-width: 350px;
+        max-width: 285px;
     }
 
     .right-div img {
@@ -352,10 +356,6 @@ footer {
     }
 
     .project-card img {
-        max-width: 350px;
-    }
-
-    .project-card p {
-        font-size: 0.9rem;
+        max-width: 250px;
     }
 }
