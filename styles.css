@@ -42,6 +42,11 @@ header {
 .navbar li {
     list-style: none;
     padding: 0 20px;
+    opacity: 0.7;
+}
+
+.navbar li:hover {
+    opacity: 1;
 }
 
 .logo {
@@ -162,6 +167,7 @@ section {
 .project-card p {
     max-width: 500px;
     line-height: 1.6rem;
+    text-align: initial;
 }
 
 .project-card i {
@@ -173,6 +179,10 @@ section {
     text-decoration: none;
     color: rgb(226 47 227 / 90%);
     font-size: 1.7rem;
+}
+
+.project-card a:hover {
+    text-transform: uppercase;
 }
 
 /* About section */
@@ -248,6 +258,10 @@ textarea {
     font-size: 1rem;
     cursor: pointer;
     margin-top: 10px;
+}
+
+.contact-button:hover {
+    text-transform: uppercase;
 }
 
 /* Footer section */
