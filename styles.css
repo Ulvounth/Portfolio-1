@@ -379,6 +379,11 @@ footer p{
         width: 100%;
       }
 
+      .about-text p {
+        max-width: 90%;
+        margin: auto;
+    }
+
       .about-image {
         width: 470px;
       }
@@ -427,6 +432,8 @@ footer p{
 
     .about-text p {
         font-size: 1rem;
+        max-width: 90%;
+        margin: auto;
     }
 
     .about-image {
