@@ -249,6 +249,37 @@ section {
     margin: 100px 0;
 }
 
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-box {
+    margin: 25px 0;
+    display: flex;
+}
+
+.contact-icons {
+    font-size: 3rem;
+    display: flex;
+    min-width: 100px;
+    align-items: center;
+    color: #248157;
+}
+
+.contact-box h3 {
+    font-size: 1.8rem;
+}
+
+.contact-box p {
+    font-size: 1.3rem;
+}
+
 .form {
     width: 100%;
 }
@@ -355,6 +386,10 @@ footer {
       .project-card p {
         max-width: 900px;
       }
+
+      .contact-container {
+        grid-template-columns: repeat(1, 1fr); 
+    }
 }
 
 @media (max-width: 800px) {
