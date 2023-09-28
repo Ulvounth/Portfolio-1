@@ -223,6 +223,8 @@ section {
     display: block;
     margin: 10px auto;
     border-radius: 10px;
+    width: 400px;
+    height: 280px;
 }
 
 .about-text {
@@ -232,6 +234,7 @@ section {
 .about-text p {
     font-size: 1.2rem;
     line-height: 2rem;
+    padding: 0;
 }
 
 .social-links {
@@ -459,7 +462,8 @@ footer p{
     }
 
     .about-image img {
-        max-width: 285px;
+        width: 285px;
+        height: 200px;
     }
 
     .right-div img {
