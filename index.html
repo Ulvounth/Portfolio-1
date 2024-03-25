@@ -112,7 +112,7 @@
                         <div class="contact-icons"><i class="fa-solid fa-location-dot"></i></div>
                         <div class="contact-text">
                             <h3>Address</h3>
-                            <p>Calle Picasso 25, Ciudad Quesada, Spain</p>
+                            <p>Ciudad Quesada, Spain</p>
                         </div>
                     </div>
                     <div class="contact-box">
@@ -130,13 +130,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="form">
-                    <input type="text" placeholder="Name" aria-autocomplete="list">
-                    <input type="email" placeholder="Email">
-                    <input type="text" placeholder="Subject">
-                    <textarea placeholder="Message"></textarea>
-                    <button class="contact-button">Send message</button>
-                </div>
+                <form name="contact" method="POST" data-netlify="true">
+                    <p>
+                      <input type="text" placeholder="Name" name="name" />   
+                    </p>
+                    <p>
+                         <input type="email" placeholder="Email" name="email" />
+                    </p>
+                    <p>
+                      <textarea placeholder="Your Message" name="message"></textarea>
+                    </p>
+                    <p>
+                      <button class="contact-button" type="submit">Send</button>
+                    </p>
+                  </form>
+                  
+                
             </div>
         </section>
     </main>
