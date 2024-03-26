@@ -9,7 +9,7 @@ document
       data[key] = value;
     });
 
-    fetch("/.netlify/functions/sendEmail.js", {
+    fetch("/.netlify/functions/sendEmail", {
       method: "POST",
       body: JSON.stringify(data),
       headers: { "Content-Type": "application/json" },
