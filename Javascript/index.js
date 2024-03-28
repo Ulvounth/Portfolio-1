@@ -3,24 +3,13 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const formData = new FormData(this);
-    const data = {};
-    formData.forEach((value, key) => {
-      data[key] = value;
-    });
+    var formData = new FormData(this);
 
-    fetch("/.netlify/functions/sendEmail", {
+    fetch("YOUR_CLOUD_FUNCTION_URL", {
       method: "POST",
-      body: JSON.stringify(data),
-      headers: { "Content-Type": "application/json" },
+      body: formData,
     })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("Success:", data);
-        // Handle success (show success message, clear form, etc.)
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-        // Handle error (show error message)
-      });
+      .then((response) => response.text())
+      .then((data) => alert("Message sent!"))
+      .catch((error) => console.error("Error:", error));
   });
